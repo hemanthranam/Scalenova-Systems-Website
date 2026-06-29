@@ -55,10 +55,10 @@ tailwind.config = {
     -webkit-text-fill-color: transparent;
 }
 .animate-fade-in {
-    animation: fadeIn 0.6s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
 }
 </style>
@@ -134,7 +134,8 @@ tailwind.config = {
 Your Business. Fully Automated. <br/>
 <span class="text-gradient">24/7.</span>
 </h1>
-<p class="text-slate-600 dark:text-slate-400 text-sm md:text-base max-w-lg leading-relaxed">A complete operational system that captures leads directly from your premium website, triggers instant WhatsApp & email follow-ups, books clients to your calendar, and tracks revenue in a live database without relying on manual staff copy-pasting.</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm md:text-base max-w-lg leading-relaxed">A complete operational system that captures leads directly from your premium website, triggers instant WhatsApp, email alerts & follow-ups, books clients into your calendar, provides web & mobile ERP management for bookings and operations, and tracks revenue in a live database without any manual staff copy-pasting.
+</p>
 <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
 <button onclick="switchPage('plans')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white premium-gradient shadow-xl shadow-brand-700/25 hover:scale-[1.02] transition-all flex items-center justify-center space-x-2"><i class="fas fa-th-large"></i> <span>Explore OS Plans</span></button>
 <button onclick="switchPage('contact')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold border border-slate-200 dark:border-slate-700 bg-white/40 dark:bg-slate-800/40 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all flex items-center justify-center space-x-2"><i class="fas fa-power-off text-brand-500"></i> <span>Deploy 24/7 Engine</span></button>
@@ -184,8 +185,8 @@ Your Business. Fully Automated. <br/>
 <span class="block text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">Reduction in Missed Leads</span>
 </div>
 <div>
-<span class="block text-xl md:text-2xl font-black tracking-tight text-gradient">0</span>
-<span class="block text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">Manual Data Entries Required</span>
+<span class="block text-xl md:text-2xl font-black tracking-tight text-gradient">90%</span>
+<span class="block text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">Automates manual data entry</span>
 </div>
 </div>
 </div>
@@ -209,7 +210,7 @@ Your Business. Fully Automated. <br/>
 <p class="text-[11px] md:text-xs text-slate-400 leading-relaxed">A typical local clinic or real estate firm loses 30% of warm leads simply because no one replied within the first 5 minutes. Scaling operations shouldn't require expanding your administrative headcount.</p>
 </div>
 <div class="pt-4 border-t border-slate-700/60">
-<span class="block text-2xl md:text-3xl font-extrabold tracking-tight text-white">50% Reduction</span>
+<span class="block text-2xl md:text-3xl font-extrabold tracking-tight text-white">70% Reduction</span>
 <span class="block text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">In manual administrative overhead</span>
 </div>
 </div>
@@ -551,18 +552,133 @@ Your Business. Fully Automated. <br/>
 
 <main id="page-privacy" class="flex-grow max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-16 hidden w-full animate-fade-in">
     <div class="glassmorphism p-6 md:p-10 rounded-3xl border border-slate-200/50 dark:border-slate-700/50 shadow-xl space-y-6">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Privacy Policy</h2>
-        <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            Scalenova Systems Pvt Ltd ("We", "Us", "Our") respects and protects corporate partner data privacy. We collect names, work emails, and WhatsApp business telephone lines strictly for setting up digital system databases, operating analytics, and automating sales follow-ups.
-        </p>
+        <div class="flex items-center space-x-3 border-b pb-4 border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 rounded-2xl premium-gradient flex items-center justify-center text-white text-xl shadow-md"><i class="fas fa-lock"></i></div>
+            <div>
+                <h2 class="text-xl md:text-2xl font-black tracking-tight">Privacy Policy</h2>
+                <span class="text-[10px] md:text-xs font-bold text-slate-500">Scalenova Systems Pvt Ltd</span>
+            </div>
+        </div>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Scalenova Systems Pvt Ltd (“Company”, “We”, “Us”, “Our”) respects the privacy of its users, clients, and business partners. This Privacy Policy explains how we collect, use, store, and protect information when you use our website, services, or digital business systems.</p>
+        
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-thumbtack mr-1"></i> 1. Information We Collect</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We may collect the following limited business-related information:</p>
+        <ul class="list-disc pl-5 text-xs space-y-2 text-slate-600 dark:text-slate-400">
+            <li>Full Name (for business contact purposes)</li>
+            <li>Work Email Address</li>
+            <li>WhatsApp Business Number / Phone Number</li>
+            <li>Company Name (if provided)</li>
+            <li>Business requirements or service-related inputs shared through forms, chat, or onboarding</li>
+        </ul>
+        <p class="text-xs font-semibold text-rose-600 dark:text-rose-400 bg-rose-50/50 dark:bg-slate-800 border border-rose-100 dark:border-slate-700 p-3 rounded-xl">We do not collect sensitive personal data such as financial passwords, Aadhaar, PAN, banking credentials, or personal private data.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-cogs mr-1"></i> 2. How We Use Your Information</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We use collected data strictly for legitimate business purposes, including:</p>
+        <ul class="list-disc pl-5 text-xs space-y-2 text-slate-600 dark:text-slate-400">
+            <li>Setting up CRM and automation systems</li>
+            <li>Lead management and customer pipeline configuration</li>
+            <li>Sending service-related updates and onboarding instructions</li>
+            <li>WhatsApp/email-based follow-ups and notifications</li>
+            <li>Improving system performance, analytics, and service delivery</li>
+            <li>Internal communication related to project execution</li>
+        </ul>
+        <p class="text-xs text-slate-600 dark:text-slate-400 italic">We do not use data for unrelated marketing or third-party resale.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-sync-alt mr-1"></i> 3. Data Sharing & Disclosure</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We do not sell, rent, or trade your data. Your information may only be shared with:</p>
+        <ul class="list-disc pl-5 text-xs space-y-2 text-slate-600 dark:text-slate-400">
+            <li>Authorized internal team members for project execution</li>
+            <li>Trusted third-party service providers (e.g., WhatsApp API, Google services, CRM tools) strictly for system functionality</li>
+            <li>Government authorities only when required under applicable law</li>
+        </ul>
+        <p class="text-xs text-slate-600 dark:text-slate-400">All partners and service providers are expected to maintain confidentiality and data protection standards.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-shield-alt mr-1"></i> 4. Data Security</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We implement reasonable technical and organizational safeguards, including secured cloud access-controlled systems, encrypted communications, and restricted internal requirements.</p>
+        <p class="text-xs text-slate-600 dark:text-slate-400 italic">However, no digital system is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-folder-open mr-1"></i> 5. Data Retention</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We retain business data only for as long as required to deliver services, maintain client systems, and comply with legal, tax, or regulatory obligations. After service termination, data may be securely archived or deleted upon request, subject to legal requirements.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-user mr-1"></i> 6. Your Rights</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Depending on applicable Indian data protection laws, you may request access to your stored data, request correction or updates, request deletion of your data (where legally permissible), or withdraw consent for communication (where applicable). Requests can be sent to our official contact email provided on the website.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-satellite-dish mr-1"></i> 7. Cookies & Tracking</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Our website may use cookies or similar technologies to improve website performance, understand user behavior and analytics, and enhance user experience. You can disable cookies through your browser settings if desired.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-globe mr-1"></i> 8. Third-Party Services</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Our systems may integrate with third-party platforms such as Google Workspace (Sheets, Forms, Apps Script), WhatsApp Business API providers, CRM tools, or Analytics platforms. These platforms operate under their own privacy policies, and we encourage users to review them separately.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-balance-scale mr-1"></i> 9. Legal Compliance</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We comply with applicable Indian data protection regulations, including principles outlined under the Digital Personal Data Protection Act, 2023 (DPDP Act) and other relevant IT laws.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-sync mr-1"></i> 10. Updates to This Policy</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-phone-alt mr-1"></i> 11. Contact Us</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">For any privacy-related concerns, data requests, or queries:<br>
+        <strong>Scalenova Systems Pvt Ltd</strong><br>
+        📧 Email: info@scalenovasystems.com<br>
+        🌐 Website: <button onclick="switchPage('home')" class="text-brand-500 font-bold hover:underline">Scalenova Systems</button></p>
     </div>
 </main>
+
 <main id="page-terms" class="flex-grow max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-16 hidden w-full animate-fade-in">
     <div class="glassmorphism p-6 md:p-10 rounded-3xl border border-slate-200/50 dark:border-slate-700/50 shadow-xl space-y-6">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Terms of Service</h2>
-        <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            By using our automated operating engines, customers ("You") agree to our template-driven deployment frameworks. Scalenova Systems provides a Business OS structure using cloud-first architecture. All upfront setup fees are non-refundable.
-        </p>
+        <div class="flex items-center space-x-3 border-b pb-4 border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 rounded-2xl premium-gradient flex items-center justify-center text-white text-xl shadow-md"><i class="fas fa-file-invoice-dollar"></i></div>
+            <div>
+                <h2 class="text-xl md:text-2xl font-black tracking-tight">Terms of Service</h2>
+                <span class="text-[10px] md:text-xs font-bold text-slate-500">Scalenova Systems Pvt Ltd</span>
+            </div>
+        </div>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">These Terms of Service (“Terms”) govern your use of services provided by Scalenova Systems Pvt Ltd (“Company”, “We”, “Us”, “Our”). By accessing our website, services, or Business Operating System solutions, you (“Client”, “User”, “You”) agree to these Terms.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-cogs mr-1"></i> 1. Service Description</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Scalenova Systems Pvt Ltd provides business automation and operating system solutions for SMEs, including CRM and lead management systems, Automated workflow systems, Google-based business dashboards, WhatsApp and email automation systems, Website deployment, and AppSheet / Looker Studio / Google Sheets integrations. All services are delivered using a template-driven, cloud-based deployment model customized for each client.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-handshake mr-1"></i> 2. Acceptance of Terms</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">By using our services, you confirm that you are authorized to act on behalf of your business, you agree to provide accurate and complete information, you understand the scope of services being provided, and you accept these Terms and any future updates.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-credit-card mr-1"></i> 3. Payments & Fees</h3>
+        <ul class="list-disc pl-5 text-xs space-y-2 text-slate-600 dark:text-slate-400">
+            <li>All setup fees and subscription charges must be paid as agreed before project initiation or activation</li>
+            <li>Setup fees are non-refundable once work has started, due to the nature of digital configuration and resource allocation</li>
+            <li>Subscription fees (if applicable) are billed on a recurring basis as per agreed terms</li>
+            <li>Failure to pay may result in suspension or termination of services</li>
+        </ul>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-ban mr-1"></i> 4. Refund Policy</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Due to the digital and customized nature of our services: All upfront setup fees are strictly non-refundable, no refunds will be issued for partially completed work after onboarding begins, and refunds are not applicable for delays caused by incomplete client inputs or approvals.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-tools mr-1"></i> 5. Client Responsibilities</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">You agree to provide timely business info, share necessary secure cloud access, cooperate during onboarding, and guarantee lawful use of the platform. Missing inputs will impact deployment timelines.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-box mr-1"></i> 6. Service Delivery</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Services are deployed using a template-based automation framework. Typical onboarding depends on the complexity of the chosen module package. <strong>We do not guarantee specific business outcomes such as sales volume or raw lead conversion rates.</strong></p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-lock mr-1"></i> 7. Data & System Usage</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">All systems are hosted on secure cloud platforms (e.g., Google ecosystem and approved third-party tools). Client data remains under operational use for system functionality and is not sold or misused under any circumstances. Refer to our Privacy Policy for detailed data handling practices.</p>
+
+        <h3 class="font-bold text-sm text-rose-600 dark:text-rose-400 pt-2"><i class="fas fa-exclamation-triangle mr-1"></i> 8. Limitation of Liability</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Scalenova Systems Pvt Ltd shall not be held liable for business losses, third-party platform failures (Google, WhatsApp API, etc.), client-side misconfiguration, or downtime caused by external vendors. Liability is limited strictly to service delivery scope.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-sync mr-1"></i> 9. Modifications to Service</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We reserve the right to improve architecture, update automation templates, and add/remove features. Clients will be informed where changes directly affect daily service usage.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-ban mr-1"></i> 10. Termination</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Services can be terminated or suspended if timely payments aren't received, misuse/harmful activity is detected, or based on a direct prior written client request.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-balance-scale mr-1"></i> 11. Legal Compliance</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">These Terms are governed under the laws of India and comply with applicable IT laws and digital service regulations, including principles under the Digital Personal Data Protection Act, 2023 (DPDP Act).</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-sync mr-1"></i> 12. Updates to Terms</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We may update these Terms periodically. Continued use of services after updates implies acceptance of revised Terms.</p>
+
+        <h3 class="font-bold text-sm text-brand-700 dark:text-brand-300 pt-2"><i class="fas fa-phone-alt mr-1"></i> 13. Contact Information</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed"><strong>Scalenova Systems Pvt Ltd</strong><br>
+        📧 Email: info@scalenovasystems.com<br>
+        🌐 Website: <button onclick="switchPage('home')" class="text-brand-500 font-bold hover:underline">Scalenova Systems</button></p>
     </div>
 </main>
 
@@ -578,18 +694,18 @@ Your Business. Fully Automated. <br/>
 <div>
 <h4 class="font-bold text-[10px] uppercase tracking-wider text-slate-400 mb-3">Quick Navigation</h4>
 <ul class="space-y-2 text-[11px] text-slate-600 dark:text-slate-400 font-semibold">
-<li><a href="#" onclick="switchPage('home'); return false;" class="hover:text-brand-500 transition">Home</a></li>
-<li><a href="#" onclick="switchPage('services'); return false;" class="hover:text-brand-500 transition">Why Us & Systems</a></li>
-<li><a href="#" onclick="switchPage('plans'); return false;" class="hover:text-brand-500 transition">OS Plans</a></li>
-<li><a href="#" onclick="switchPage('careers'); return false;" class="hover:text-brand-500 transition">Careers</a></li>
-<li><a href="#" onclick="switchPage('contact'); return false;" class="hover:text-brand-500 transition">Contact Us</a></li>
+<li><button onclick="switchPage('home')" class="hover:text-brand-500 transition w-full text-left">Home</button></li>
+<li><button onclick="switchPage('services')" class="hover:text-brand-500 transition w-full text-left">Why Us & Systems</button></li>
+<li><button onclick="switchPage('plans')" class="hover:text-brand-500 transition w-full text-left">OS Plans</button></li>
+<li><button onclick="switchPage('careers')" class="hover:text-brand-500 transition w-full text-left">Careers</button></li>
+<li><button onclick="switchPage('contact')" class="hover:text-brand-500 transition w-full text-left">Contact Us</button></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-[10px] uppercase tracking-wider text-slate-400 mb-3">Company Compliance</h4>
 <ul class="space-y-2 text-[11px] text-slate-600 dark:text-slate-400 font-semibold">
-<li><a href="#" onclick="switchPage('privacy'); return false;" class="hover:text-brand-500 transition">Privacy Policy</a></li>
-<li><a href="#" onclick="switchPage('terms'); return false;" class="hover:text-brand-500 transition">Terms of Service</a></li>
+<li><button onclick="switchPage('privacy')" class="hover:text-brand-500 transition w-full text-left">Privacy Policy</button></li>
+<li><button onclick="switchPage('terms')" class="hover:text-brand-500 transition w-full text-left">Terms of Service</button></li>
 </ul>
 </div>
 <div>
